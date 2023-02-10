@@ -5,3 +5,8 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+.grid_container{
+    display: grid;
+    
+}
+
