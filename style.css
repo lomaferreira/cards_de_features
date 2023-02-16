@@ -4,21 +4,25 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
+    background: hsla(0, 0%, 5%, 0.062);
+    
 }
 
+ /*Introduction*/
 .introduction {
   margin: 0 auto;
   text-align: center;
   border: 1px solid red;
 }
 
-span {
+.introduction span {
   font-weight: 200
 }
-h1 {
+.introduction h1 {
   font-weight: 500
 }
 
+/*Grid*/
 .grid_container {
   border: 1px solid red;
   display: grid;
@@ -28,13 +32,14 @@ h1 {
   margin: 10px auto;
 
 }
-.grid_container>div {
-  height: 170px;
-  width: 320px;
+.grid_container > div {
   padding: 30px;
+  max-width: 100%;
+  box-shadow: 5px  5px 7px  hsl(220, 3%, 60%);
+  background: hsl(204, 67%, 83%);
 }
 
-
+/*Cards*/
 .karma {
   grid-column: 2;
   border: 1px solid red;
@@ -43,21 +48,45 @@ h1 {
 
 .supervisor {
   border: 1px solid red;
-  position: relative;
-  top: 85px;
-  justify-items: center;
-  align-items: center;
   border-top: 5px solid red;
 }
 
 .team_builder {
   border: 1px solid red;
   border-top: 5px solid red;
+
 }
 
 .calculator {
   border: 1px solid red;
-  position: relative;
-  top: 85px;
   border-top: 5px solid red;
+}
+
+/*Position of cards side*/
+.supervisor,.calculator {
+    position: relative;
+      top: 85px;
+}
+
+/*Icons*/
+#icons{
+  border: 1px solid red;
+  font-size: 46px;
+  text-align:right;
+  margin-top: 20px;
+
+}
+
+/*Media queries*/
+@media (max-width:700px){
+.grid_container{
+  display: flex;
+ flex-direction: column; 
+}
+.supervisor {
+  position: static;
+}
+.calculator {
+  position: static;
+}
 }
