@@ -5,8 +5,59 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-.grid_container{
-    display: grid;
-    
+
+.introduction {
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid red;
 }
 
+span {
+  font-weight: 200
+}
+h1 {
+  font-weight: 500
+}
+
+.grid_container {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  max-width: 90%;
+  margin: 10px auto;
+
+}
+.grid_container>div {
+  height: 170px;
+  width: 320px;
+  padding: 30px;
+}
+
+
+.karma {
+  grid-column: 2;
+  border: 1px solid red;
+  border-top: 5px solid red;
+}
+
+.supervisor {
+  border: 1px solid red;
+  position: relative;
+  top: 85px;
+  justify-items: center;
+  align-items: center;
+  border-top: 5px solid red;
+}
+
+.team_builder {
+  border: 1px solid red;
+  border-top: 5px solid red;
+}
+
+.calculator {
+  border: 1px solid red;
+  position: relative;
+  top: 85px;
+  border-top: 5px solid red;
+}
